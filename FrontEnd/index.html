@@ -8,10 +8,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Shop Cart</h1>
-      <p>Are you a?</p>
-      <button><a href="seller.html">Seller</a></button>
-      <button><a href="buyer.html">Buyer</a></button>
+      <p id="Welcome">Welcome to Shop Cart</p>
+      <p id="iam">I'm a</p>
+      <div>
+        <button class="buttons" id="seller">Seller</button>
+        <button class="buttons" id="buyer">Buyer</button>
+      </div>
     </div>
+    <script>
+      document.getElementById("seller").addEventListener(onclick,
+       function() {
+        window.location.href = "seller.html"
+      });
+      document.getElementById("buyer").addEventListener(onclick,
+       function() {
+        window.location.href = "buyer.html"
+      });
+    </script>
   </body>
 </html>
